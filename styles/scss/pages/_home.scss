@@ -1,0 +1,22 @@
+.hero-form-group{
+    border: 1px solid rgba($color: black, $alpha: 0.1);
+    
+}
+
+.blog-tag-left{ 
+    @include blog-type($home-blog-bg1)
+}
+
+.blog-tag-right{ 
+    @include blog-type($home-blog-bg2)
+}
+
+.blog-desc{ 
+    width: 90%;
+    margin-top: -40px;
+    background-color: white;
+    border-radius: 5px;
+    p{
+        font-size: small;
+    }
+}

@@ -1,0 +1,56 @@
+.header-btn{ 
+    background-color: $primary-color-light;
+    border-radius: 5px;
+    color: $primary-color;
+    border: none;
+    // Only show hover effect on LG + Screen sizes
+    @media (min-width: 992px) { 
+        @include diagonalanimation($primary-color, white);
+    } 
+}
+
+.main-btn{
+    background-color: $primary-color-light;
+    border-radius: 5px;
+    color: $primary-color;
+    border: none;
+    @include diagonalanimation($primary-color, white);
+    
+}
+
+.hero-btn{
+    background-color: $primary-color;
+    border-radius: 0px;
+    color: white;
+    border: none;
+    height: 60px;
+    @include diagonalanimation(white, $primary-color);
+    &:hover{
+        border: 1px solid $primary-color;
+    }
+}
+
+.blog-readmore-btn{
+    padding: 15px 35px;
+    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    border-radius: 5px;
+    text-decoration: none;
+    color: $text-header-color;
+    font-weight: 600;
+    transition: color .5s;
+    &:hover{
+        color: $primary-color;
+    }
+}
+
+/*Hover effekt for google play and apple store button index.html*/
+.google-play-btn, .apple-store-btn{
+    transition: .5s;
+    &:hover{
+        background-color: $primary-color;
+        i, p, h5{
+            color: white !important;
+        }
+    }
+}
+

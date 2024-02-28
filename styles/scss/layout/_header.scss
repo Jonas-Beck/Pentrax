@@ -1,0 +1,65 @@
+header {
+    /* NAVBAR STYLING*/
+    .navbar {
+        background-color: $header-bg;
+        a {
+            text-decoration: none;
+            color: $text-header-color;
+        }
+        .dropdown-menu {
+            border: none;
+        }
+        .dropdown-toggle::after {
+            display: none !important;
+        }
+        @media (min-width: 992px) {
+            //Show dropdown on hover on lG + screen sizes
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+            // Show boxshadow on dropdown menu on LG + screen sizes
+            .dropdown-menu {
+                box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
+                .dropdown-item:active {
+                    // Bootstrap5 Tertiary Color
+                    background-color: rgba(173, 181, 189, 0.2);
+                    color: $primary-color;
+                }
+            }
+        }
+        //Hover color change
+        .nav-link:hover,
+        .dropdown-item:hover {
+            color: $primary-color;
+        }
+        // Override default border radius on hover
+        .dropdown-menu {
+            li:first-child .dropdown-item:hover {
+                border-top-left-radius: 0.375rem;
+                border-top-right-radius: 0.375rem;
+            }
+            li:last-child .dropdown-item:hover {
+                border-bottom-left-radius: 0.375rem;
+                border-bottom-right-radius: 0.375rem;
+            }
+        }
+        .navbar-toggler {
+            background-color: white;
+            border-radius: 0px;
+            padding: 10px;
+        }
+    }
+
+    /*Remove outline on burger menu click*/
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    //  BANNER FOR SUB PAGES
+    .banner {
+        background-image: url("/AspitLAB1/Websites/Pentrax/Gfx/bg-wide.jpg");
+    }
+}

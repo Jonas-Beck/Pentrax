@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Bootstrap5 Link-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- SCSS Link -->
+    <link rel="stylesheet" href="../styles/css/main.css">
+    <!-- Font Awesome Link-->
+    <script src="https://kit.fontawesome.com/da2cc9f736.js" crossorigin="anonymous"></script>
+    <!-- Mapbox style Link-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet'/>
+</head>
+<body>
+    <!-- HEADER-->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar fixed-top navbar-expand-lg shadow ">
+            <div class="container">
+                <!-- Navbar Brand Logo-->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Gfx/logo.png" alt="PentraxLogo" class="img-fluid">
+            </a>
+            
+            <div class="d-flex gap-3 order-lg-last ">
+                <!-- PACKAGE BUTTON-->
+                <button class="header-btn ">
+                    <i class="fa-solid fa-envelope-open-text d-lg-none px-3"></i>
+                    <p class="d-none d-lg-block p-2 px-3">Get Package</p>
+                </button>
+                <!-- Navbar burger button-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Navbar Collapse Content-->
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarToggler">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                <!-- Home-->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <!-- Feature-->
+                <li class="nav-item">
+                    <a class="nav-link  nav-link-home" aria-current="page" href="./features.html">Feature</a>
+                </li>
+                <!-- Team-->
+                <li class="nav-item">
+                    <a class="nav-link  nav-link-home" aria-current="page" href="./team.html">Team</a>
+                </li>
+                <!-- Pages Dropdown Item-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" > 
+                        <div class="d-flex align-items-center gap-2">
+                            <!-- Dropdown Name-->
+                            <p class="">Pages</p>
+                            <!-- Arrow down icon-->
+                            <i class="fa-solid fa-angle-down "></i> 
+                        </div>
+                    </a>
+                    <!-- Dropdown Agents Content-->
+                    <ul class="dropdown-menu p-0 " aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item p-2 ps-4" href="./blog.html">Blog</a></li>
+                    <li><a class="dropdown-item p-2 ps-4" href="./blog.html">Blog Details</a></li>
+                    <li><a class="dropdown-item p-2 ps-4" href="./blog.html">Testimonials</a></li>
+                    </ul>
+                </li>
+                <!-- NEWS-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <!-- CONTACT-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+             <!-- TEAM BANNER-->
+            <div class="container-fluid py-5 mt-5 banner">
+                <div class="row text-center py-4 ">
+                    <div class="col-12">
+                        <h1 class=" fw-semibold">Contact Us</h1>
+                    </div>
+                    <div class="col-12">
+                        <p class=" text-secondary">Home &bull; Contact</p>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <div class="container my-5">
+            <!-- CONTACT MAP-->
+            <div class="row my-4">
+                <div class="col-12 text-center"> 
+                    <!-- Mapbox -->
+                    <div id="map"></div>    
+                    <!--Google maps -->
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4004.966939361275!2d9.523562871110677!3d55.7113840255385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c825a320c7019%3A0xe8c7d0ed90b81b33!2sCampus%20Vejle!5e0!3m2!1sda!2sdk!4v1678265721232!5m2!1sda!2sdk" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                </div>
+            </div>
+            <!-- CONTACT TITLE-->
+            <div class="row ">
+                <div class="col-12">
+                    <h4 class="fw-semibold text-primary">Contact with us</h4>
+                </div>
+                <div class="col-12 col-sm-11 col-md-11 col-lg-8 col-xl-8 ">
+                    <h2 class="fw-semibold">If you Have any query, Dont Hesitate contact with us</h2>
+                </div>
+            </div>
+            <!-- CONTACT FORM / INFO-->
+            <div class="row my-5 ">
+                <!-- CONTACT INFO-->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="row contact-info">
+                        <!-- Office Address-->  
+                        <div class="col-12 col-lg-12 col-md-4 d-flex align-items-center gap-4 pb-4">
+                            <i class="fa-solid fa-location-dot text-primary fa-2xl pb-4 ps-1"></i> 
+                            <div>
+                                <h4 class="fw-semibold">Office Address</h4>
+                                <p class="text-secondary pb-1">848 E 28th ST, BROOKLYN </p>
+                                <p class="text-secondary">NEW YORK, USA</p>
+                            </div>
+                        </div>
+                        <!-- Phone-->
+                        <div class="col-12 col-lg-12 col-md-4 d-flex align-items-center gap-4 pb-4">
+                            <i class="fa-solid fa-phone-flip text-primary fa-2xl pb-4"></i> 
+                            <div>
+                                <h4 class="fw-semibold">Phone</h4>
+                                <p class="text-secondary pb-1">+02 365 2365 3265(02)</p>
+                                <p class="text-secondary">+01 365 2365 3265(04)</p>
+
+                            </div>
+                        </div>
+                        <!-- Email-->
+                        <div class="col-12 col-lg-12 col-md-4 d-flex align-items-center gap-4 pb-4">
+                            <i class="fa-solid fa-envelope text-primary fa-2xl pb-4 "></i> 
+                            <div>
+                                <h4 class="fw-semibold">Email</h4>
+                                <p class="text-secondary pb-1">example@pentrax.com</p>
+                                <p class="text-secondary">example@pentrax.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONTACT FORM-->
+                <div class="col-12 col-lg-8  contact-form">
+                    <form action="">
+                        <!-- NAME FORM-->
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <!-- EMAIL FORM-->
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <!-- COMMENT FORM-->
+                        <div class="mb-3">
+                            <textarea class="form-control"  rows="6" placeholder="Write Comment" required></textarea>
+                        </div>
+                        <button class="main-btn" type="submit">
+                            <p class="p-2 px-3">Submit Now</p>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER-->
+    <footer>
+        <!-- FOOTER MAIN-->
+        <div class="container py-5">
+            <div class="row">
+                <!-- ICON -->
+                <div class="col-12 col-md-12 col-lg-3 mb-3  mb-lg-0">
+                    <img src="../Gfx/logo.png" alt="PentraxLogo" class="img-fluid pb-4">
+                    <p class="text-secondary">Moved place under seed can be an not live meveth deep is darkness lights behold second and replenish them fly forth soi void bearing god set song first together</p>
+                    <h6 class="text-primary fw-bold footer-phone pt-3">88 256 235 6212</h6>
+                </div>
+                <!-- SUPPORT-->
+                <div class="col-12 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                    <div class="footer-header">
+                        <h5>Support</h5>
+                        <hr>
+                    </div>
+                    <!-- SUPPORT NAV LINKS-->
+                    <nav class="footer-link-nav d-flex flex-column gap-3 ">
+                        <a href="#" class="text-decoration-none text-secondary">Compare Service</a>
+                        <a href="#" class="text-decoration-none text-secondary">Track Order</a>
+                        <a href="#" class="text-decoration-none text-secondary">Shop Categories</a>
+                        <a href="#" class="text-decoration-none text-secondary">Get Wishlist</a>
+                        <a href="#" class="text-decoration-none text-secondary">Bridge Construction</a>
+                        <a href="#" class="text-decoration-none text-secondary">Support Center</a>
+                    </nav>
+                </div>
+                <!-- QUICK LINK-->
+                <div class="col-12 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                    <div class="footer-header">
+                        <h5>Quick Link</h5>
+                        <hr>
+                    </div>
+                    <!-- QUICK LINK NAV LINKS-->
+                    <nav class="footer-link-nav d-flex flex-column gap-3 ">
+                        <a href="#" class="text-decoration-none text-secondary">Affiliate Program</a>
+                        <a href="#" class="text-decoration-none text-secondary">Developers</a>
+                        <a href="#" class="text-decoration-none text-secondary">Mediamarket Ignite</a>
+                        <a href="#" class="text-decoration-none text-secondary">SPE Servicve</a>
+                        <a href="#" class="text-decoration-none text-secondary">Mediamarket Direct</a>
+                        <a href="#" class="text-decoration-none text-secondary">Advertise With Us</a>
+                    </nav>
+                </div>
+                <!-- NEWSLETTERS-->
+                <div class="col-12 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                    <div class="footer-header">
+                        <h5>Newsletters</h5>
+                        <hr>
+                    </div>
+                    <p class="text-secondary pb-3">Female may days Yielding you are set fit there and without.</p>
+                    <!-- NEWSLETTERS FORM GROUP-->
+                    <div class="input-group mb-3">
+                        <!-- EMAIL FORM-->
+                        <input type="email" class="form-control " placeholder="Enter your email" id="footer-emailinput" aria-describedby="emailHelp">
+                        <!-- EMAIL ICON-->
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                    </div>
+                    <!-- SUBSCRIBE BUTTON-->
+                    <button class="btn footer-btn">
+                        Subscribe Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER BOTTOM-->
+        <div class="container-fluid footer-bottom">
+            <div class="row justify-content-between justify-content-md-center p-3">
+                <div class="col-auto">
+                    <p class="text-secondary">Copyright &#169; 2020</p>
+                </div>
+                <div class="col-auto">
+                    <p class="text-secondary">All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap5 Popper-->
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <!-- Bootstrap5 Javascript-->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- Mapbox Scrit-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
+    <!-- Mapbox Script-->
+    <script src="../js/mapbox.js"></script>
+
+</body>
+</html>
+
+

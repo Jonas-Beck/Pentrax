@@ -1,0 +1,16 @@
+// Remove Bootstrap5 focus border and add opacity to placeholder text
+.form-select, .form-control{
+    &:focus{
+        box-shadow: none;
+        border-color: rgba($color: black, $alpha: 0.1);
+    }
+    &::placeholder{
+        opacity: 0.5;
+    }
+}
+textarea{
+    resize: none;
+    &:focus{
+        outline: 2px solid $contact-textare-outline !important;
+    }
+}

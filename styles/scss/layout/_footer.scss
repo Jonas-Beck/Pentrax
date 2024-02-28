@@ -1,0 +1,55 @@
+footer{
+    background-color: $footer-bg;
+
+    .footer-phone{
+        font-size: large;
+    }
+    .footer-header{
+        @include header-line
+    }
+    .footer-link-nav{
+        a:hover{
+            transition: 0.5s;
+            transform: translateX(5px);
+            color: $primary-color !important;
+        }
+    }
+    
+    .input-group{
+        input{
+            border-radius: 0;
+            border: none;
+            padding: 15px;
+            border-right: none;
+            &:focus{
+                outline: none;
+                box-shadow: none;
+                border-color: rgba($color: black, $alpha: 0.1);
+            }
+            &::placeholder{
+                opacity: 0.5;
+            }
+        }
+        span{
+            border-left: none;
+            background-color: white;
+            color: $primary-color;
+            border-radius: 0;
+            border: none;
+        }
+    }
+    .footer-btn{
+        background-color: $primary-color;
+        padding: 10px 20px 10px 20px;
+        border-radius: 25px;
+        color: white;
+        &:hover{
+            transition: 0.5s;
+            background-color: white;
+            color: black;
+        }
+    }
+    .footer-bottom{
+        border-top: 1px solid rgba($color: black, $alpha: 0.1);
+    }
+}

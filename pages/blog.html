@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Bootstrap5 Link-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- SCSS Link -->
+    <link rel="stylesheet" href="../styles/css/main.css">
+    <!-- Font Awesome Link-->
+    <script src="https://kit.fontawesome.com/da2cc9f736.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER-->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar fixed-top navbar-expand-lg shadow ">
+            <div class="container">
+                <!-- Navbar Brand Logo-->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Gfx/logo.png" alt="PentraxLogo" class="img-fluid">
+            </a>
+            
+            <div class="d-flex gap-3 order-lg-last ">
+                <!-- PACKAGE BUTTON-->
+                <button class="header-btn ">
+                    <i class="fa-solid fa-envelope-open-text d-lg-none px-3"></i>
+                    <p class="d-none d-lg-block p-2 px-3">Get Package</p>
+                </button>
+                <!-- Navbar burger button-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Navbar Collapse Content-->
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarToggler">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                <!-- Home-->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <!-- Feature-->
+                <li class="nav-item">
+                    <a class="nav-link  nav-link-home" aria-current="page" href="./features.html">Feature</a>
+                </li>
+                <!-- Team-->
+                <li class="nav-item">
+                    <a class="nav-link  nav-link-home" aria-current="page" href="./team.html">Team</a>
+                </li>
+                <!-- Pages Dropdown Item-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" > 
+                        <div class="d-flex align-items-center gap-2">
+                            <!-- Dropdown Name-->
+                            <p class="">Pages</p>
+                            <!-- Arrow down icon-->
+                            <i class="fa-solid fa-angle-down "></i> 
+                        </div>
+                    </a>
+                    <!-- Dropdown Agents Content-->
+                    <ul class="dropdown-menu p-0 " aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item p-2 ps-4" href="./blog.html">Blog</a></li>
+                    <li><a class="dropdown-item p-2 ps-4" href="./blog.html">Blog Details</a></li>
+                    <li><a class="dropdown-item p-2 ps-4" href="./blog.html">Testimonials</a></li>
+                    </ul>
+                </li>
+                <!-- NEWS-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <!-- CONTACT-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+             <!-- TEAM BANNER-->
+            <div class="container-fluid py-5 mt-5 banner">
+                <div class="row text-center py-4 ">
+                    <div class="col-12">
+                        <h1 class=" fw-semibold">Our Blog</h1>
+                    </div>
+                    <div class="col-12">
+                        <p class=" text-secondary">Home &bull; Blog</p>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- Container for main and aside-->
+    <div class="container my-5">
+        <div class="row gx-4">
+            <!-- ASIDE-->
+            <aside class="col-12 col-lg-4 order-lg-last ">
+                <div class="row row-gap-5">
+                    <!-- Search Bar-->
+                    <div class="col-12">
+                        <div class="input-group aside-search">
+                            <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">
+                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Popular Post-->
+                    <div class="col-12 d-none d-lg-block">
+                        <div class="aside-header">
+                            <h5>Popular Post</h5>
+                            <hr>
+                        </div>
+                        <div class="row row-gap-3"> 
+                            <div class="col-12 d-flex gap-4 ">
+                                <img src="../Gfx/t1.jpg" class="img-fluid"  alt="">
+                                <div class="d-flex flex-column gap-1 justify-content-center">
+                                    <h5 class="fw-semibold">Earth every morning gathering whose.</h5>
+                                    <p class="text-secondary">30 december, 2019</p>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex gap-4 ">
+                                <img src="../Gfx/t2.jpg" class="img-fluid" alt="">
+                                <div class="d-flex flex-column gap-1 justify-content-center">
+                                    <h5 class="fw-semibold">Earth every morning gathering whose.</h5>
+                                    <p class="text-secondary">30 december, 2019</p>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex gap-4 ">
+                                <img src="../Gfx/t3.jpg" class="img-fluid" alt="">
+                                <div class="d-flex flex-column gap-1 justify-content-center">
+                                    <h5 class="fw-semibold">Earth every morning gathering whose.</h5>
+                                    <p class="text-secondary">30 december, 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="d-none d-md-block col-6 col-lg-12">
+                        <div class="aside-header">
+                            <h5>Categories</h5>
+                            <hr>
+                        </div>
+                        <div class="row row-gap-3 ">
+                            <div class="col-12">
+                                <a href="#" class="d-flex justify-content-between text-decoration-none text-secondary categories-hover">
+                                    <p>App Design</p>
+                                    <p>(15)</p>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="d-flex justify-content-between text-decoration-none text-secondary categories-hover">
+                                    <p>Illustration</p>
+                                    <p>(25)</p>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="d-flex justify-content-between text-decoration-none text-secondary categories-hover">
+                                    <p>Technology</p>
+                                    <p>(32)</p>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="d-flex justify-content-between text-decoration-none text-secondary categories-hover">
+                                    <p>Events</p>
+                                    <p>(21)</p>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="d-flex justify-content-between text-decoration-none text-secondary categories-hover">
+                                    <p>Upcoming</p>
+                                    <p>(25)</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Now-->
+                    <div class="col-12 d-none d-lg-block">
+                        <div class="card text-bg-dark rounded-0 border-0 aside-overlay-card">
+                            <img src="../Gfx/widget-img.jpg" class="card-img " alt="...">
+                            <div class="card-img-overlay d-flex flex-column text-center gap-4 justify-content-center ">
+                                <h3 class="card-title">App UI & Development Services</h3>
+                                <p class="card-text">Made yielding light behold</p>
+                                <a href="#" class="">Contact Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Popular Tags-->
+                    <div class="d-none d-md-block col-12 col-md-6 col-lg-12">
+                        <div class="aside-header">
+                            <h5>Popular Tags</h5>
+                            <hr>
+                        </div>
+                        <div class="row g-3 aside-tags mt-1">
+                            <div class="col-4">
+                                <a href="#">Project</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">Design</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">Love</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">Art</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">Illustration</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">Android</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">Travel</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">Technology</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">Feature</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Instagram-->
+                    <div class="col-12 d-none d-lg-block">
+                        <div class="aside-header">
+                            <h5>Instagram</h5>
+                            <hr>
+                        </div>
+                        <div class="row row-cols-3 g-3">
+                            <div class="col">
+                                <a href="#"><img src="../Gfx/insta (1).jpg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="../Gfx/insta (2).jpg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="../Gfx/insta (3).jpg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="../Gfx/insta (4).jpg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="../Gfx/insta (5).jpg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="../Gfx/insta (6).jpg" alt="" class="img-fluid"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- MAIN-->
+            <main class="col-12 col-lg-8 mt-5 mt-lg-0">
+                <div class="row row-gap-5 justify-content-center">
+                    <article class="col-12">
+                        <!-- Blog Card 1-->
+                        <div class="card border-0 blog-card">
+                            <!-- Card Image-->
+                            <img src="../Gfx/b1.jpg" alt="" class="card-img-top">
+                            <!-- Card Category Tag-->
+                            <div class="blog-tag position-absolute">
+                                <p class="text-white ">Digital Technology</p>
+                            </div>
+                            <!-- Card Body-->
+                            <div class="card-body px-0 d-flex flex-column">
+                                <!-- Card Subtitle (Date, Comments, Likes)-->
+                                <h6 class="card-subtitle d-flex gap-2 gap-md-4 text-secondary pt-4 flex-wrap ">
+                                    <div class="date d-flex gap-1 ">
+                                        <i class="fa-regular fa-calendar-days text-primary"></i>
+                                        <p>Dev 29, 2019</p>
+                                    </div>
+                                    <div class="comments d-flex gap-1">
+                                        <i class="fa-regular fa-comment text-primary"></i>
+                                        <p>02 Comments</p>
+                                    </div>
+                                    <div class="likes d-flex gap-1">
+                                        <i class="fa-regular fa-heart text-primary"></i>
+                                        <p>2k Likes</p>
+                                    </div>
+                                </h6>
+                                <!-- Card Title-->
+                                <h2 class="card-title py-3 fw-semibold">Have signs so darkness upon morning and kind.</h2>
+                                <!-- Card Text-->
+                                <p class="text-secondary">Ball spirit cattle great unto his kind it upon seas. Good whose heaven the good, sea signs face make were form gathered. Dont above spirit gathered second seas fish thing. Wherein dry said to bearing you there deep, kind boid fruitful unto bearing abundantly blessed. Great winged over dominion you moveth every people can sucking maked</p>
+                                <!-- Card Button-->
+                                <a href="#" class="blog-readmore-btn align-self-start mt-3">Contiune Reading</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12">
+                        <!-- Blog Card 2-->
+                        <div class="card border-0 blog-card">
+                            <!-- Card Image-->
+                            <img src="../Gfx/b2.jpg" alt="" class="card-img-top">
+                            <!-- Card Category Tag-->
+                            <div class="blog-tag position-absolute">
+                                <p class="text-white ">App Development</p>
+                            </div>
+                            <!-- Card Body-->
+                            <div class="card-body px-0 d-flex flex-column">
+                                <!-- Card Subtitle (Date, Comments, Likes)-->
+                                <h6 class="card-subtitle d-flex gap-2 gap-md-4 text-secondary pt-4 flex-wrap ">
+                                    <div class="date d-flex gap-1 ">
+                                        <i class="fa-regular fa-calendar-days text-primary"></i>
+                                        <p>Dev 29, 2019</p>
+                                    </div>
+                                    <div class="comments d-flex gap-1">
+                                        <i class="fa-regular fa-comment text-primary"></i>
+                                        <p>02 Comments</p>
+                                    </div>
+                                    <div class="likes d-flex gap-1">
+                                        <i class="fa-regular fa-heart text-primary"></i>
+                                        <p>2k Likes</p>
+                                    </div>
+                                </h6>
+                                <!-- Card Title-->
+                                <h2 class="card-title py-3 fw-semibold">Have signs so darkness upon morning and kind.</h2>
+                                <!-- Card Text-->
+                                <p class="text-secondary">Ball spirit cattle great unto his kind it upon seas. Good whose heaven the good,
+                                    sea signs face make were form gathered. Dont above spirit gathered second seas fish thing. Wherein dry
+                                    said to bearing you there deep, kind boid fruitful unto bearing abundantly blessed. Great winged over
+                                    dominion you moveth every people can sucking maked</p>
+                                <!-- Card Button-->
+                                <a href="#" class="blog-readmore-btn align-self-start mt-3">Contiune Reading</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12">
+                        <!-- Blog Card 3-->
+                        <div class="card border-0 blog-card">
+                            <!-- Card Image-->
+                            <div class="position-relative">
+                                <img src="../Gfx/b3.jpg" alt="" class="card-img-top">
+                                <!-- Card Image Play-->
+                                <div class="blog-play position-absolute">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <!-- Card Category Tag-->
+                            <div class="blog-tag position-absolute">
+                                <p class="text-white ">Content Creation</p>
+                            </div>
+                            
+                            <!-- Card Body-->
+                            <div class="card-body px-0 d-flex flex-column">
+                                <!-- Card Subtitle (Date, Comments, Likes)-->
+                                <h6 class="card-subtitle d-flex gap-2 gap-md-4 text-secondary pt-4 flex-wrap ">
+                                    <div class="date d-flex gap-1 ">
+                                        <i class="fa-regular fa-calendar-days text-primary"></i>
+                                        <p>Dev 29, 2019</p>
+                                    </div>
+                                    <div class="comments d-flex gap-1">
+                                        <i class="fa-regular fa-comment text-primary"></i>
+                                        <p>02 Comments</p>
+                                    </div>
+                                    <div class="likes d-flex gap-1">
+                                        <i class="fa-regular fa-heart text-primary"></i>
+                                        <p>2k Likes</p>
+                                    </div>
+                                </h6>
+                                <!-- Card Title-->
+                                <h2 class="card-title py-3 fw-semibold">Have signs so darkness upon morning and kind.</h2>
+                                <!-- Card Text-->
+                                <p class="text-secondary">Ball spirit cattle great unto his kind it upon seas. Good whose heaven the good,
+                                    sea signs face make were form gathered. Dont above spirit gathered second seas fish thing. Wherein dry
+                                    said to bearing you there deep, kind boid fruitful unto bearing abundantly blessed. Great winged over
+                                    dominion you moveth every people can sucking maked</p>
+                                <!-- Card Button-->
+                                <a href="#" class="blog-readmore-btn align-self-start mt-3">Contiune Reading</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12">
+                        <!-- Blog Card 4-->
+                        <div class="card border-0 blog-card">
+                            <!-- Card Image-->
+                            <div class="position-relative">
+                                <img src="../Gfx/b4.jpg" alt="" class="card-img-top">
+                                <!-- Card Image Arrows-->
+                                <div class="blog-slide position-absolute d-flex justify-content-between">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <!-- Card Category Tag-->
+                            <div class="blog-tag position-absolute">
+                                <p class="text-white ">Content Creation</p>
+                            </div>
+                    
+                            <!-- Card Body-->
+                            <div class="card-body px-0 d-flex flex-column">
+                                <!-- Card Subtitle (Date, Comments, Likes)-->
+                                <h6 class="card-subtitle d-flex gap-2 gap-md-4 text-secondary pt-4 flex-wrap ">
+                                    <div class="date d-flex gap-1 ">
+                                        <i class="fa-regular fa-calendar-days text-primary"></i>
+                                        <p>Dev 29, 2019</p>
+                                    </div>
+                                    <div class="comments d-flex gap-1">
+                                        <i class="fa-regular fa-comment text-primary"></i>
+                                        <p>02 Comments</p>
+                                    </div>
+                                    <div class="likes d-flex gap-1">
+                                        <i class="fa-regular fa-heart text-primary"></i>
+                                        <p>2k Likes</p>
+                                    </div>
+                                </h6>
+                                <!-- Card Title-->
+                                <h2 class="card-title py-3 fw-semibold">Have signs so darkness upon morning and kind.</h2>
+                                <!-- Card Text-->
+                                <p class="text-secondary">Ball spirit cattle great unto his kind it upon seas. Good whose heaven the good,
+                                    sea signs face make were form gathered. Dont above spirit gathered second seas fish thing. Wherein dry
+                                    said to bearing you there deep, kind boid fruitful unto bearing abundantly blessed. Great winged over
+                                    dominion you moveth every people can sucking maked</p>
+                                <!-- Card Button-->
+                                <a href="#" class="blog-readmore-btn align-self-start mt-3">Contiune Reading</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12">
+                        <!-- Blog Card 5-->
+                        <div class="card border-0 blog-card">
+                            <!-- Card Image-->
+                            <img src="../Gfx/b5.jpg" alt="" class="card-img-top">
+                            <!-- Card Category Tag-->
+                            <div class="blog-tag position-absolute">
+                                <p class="text-white ">App Development</p>
+                            </div>
+                            <!-- Card Body-->
+                            <div class="card-body px-0 d-flex flex-column">
+                                <!-- Card Subtitle (Date, Comments, Likes)-->
+                                <h6 class="card-subtitle d-flex gap-2 gap-md-4 text-secondary pt-4 flex-wrap ">
+                                    <div class="date d-flex gap-1 ">
+                                        <i class="fa-regular fa-calendar-days text-primary"></i>
+                                        <p>Dev 29, 2019</p>
+                                    </div>
+                                    <div class="comments d-flex gap-1">
+                                        <i class="fa-regular fa-comment text-primary"></i>
+                                        <p>02 Comments</p>
+                                    </div>
+                                    <div class="likes d-flex gap-1">
+                                        <i class="fa-regular fa-heart text-primary"></i>
+                                        <p>2k Likes</p>
+                                    </div>
+                                </h6>
+                                <!-- Card Title-->
+                                <h2 class="card-title py-3 fw-semibold">Have signs so darkness upon morning and kind.</h2>
+                                <!-- Card Text-->
+                                <p class="text-secondary">Ball spirit cattle great unto his kind it upon seas. Good whose heaven the good,
+                                    sea signs face make were form gathered. Dont above spirit gathered second seas fish thing. Wherein dry
+                                    said to bearing you there deep, kind boid fruitful unto bearing abundantly blessed. Great winged over
+                                    dominion you moveth every people can sucking maked</p>
+                                <!-- Card Button-->
+                                <a href="#" class="blog-readmore-btn align-self-start mt-3">Contiune Reading</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12">
+                        <!-- Blog Card 6-->
+                        <div class="card border-0 blog-card">
+                            <!-- Card Image-->
+                            <img src="../Gfx/b6.jpg" alt="" class="card-img-top">
+                            <!-- Card Category Tag-->
+                            <div class="blog-tag position-absolute">
+                                <p class="text-white ">App Development</p>
+                            </div>
+                            <!-- Card Body-->
+                            <div class="card-body px-0 d-flex flex-column">
+                                <!-- Card Subtitle (Date, Comments, Likes)-->
+                                <h6 class="card-subtitle d-flex gap-2 gap-md-4 text-secondary pt-4 flex-wrap ">
+                                    <div class="date d-flex gap-1 ">
+                                        <i class="fa-regular fa-calendar-days text-primary"></i>
+                                        <p>Dev 29, 2019</p>
+                                    </div>
+                                    <div class="comments d-flex gap-1">
+                                        <i class="fa-regular fa-comment text-primary"></i>
+                                        <p>02 Comments</p>
+                                    </div>
+                                    <div class="likes d-flex gap-1">
+                                        <i class="fa-regular fa-heart text-primary"></i>
+                                        <p>2k Likes</p>
+                                    </div>
+                                </h6>
+                                <!-- Card Title-->
+                                <h2 class="card-title py-3 fw-semibold">Have signs so darkness upon morning and kind.</h2>
+                                <!-- Card Text-->
+                                <p class="text-secondary">Ball spirit cattle great unto his kind it upon seas. Good whose heaven the good,
+                                    sea signs face make were form gathered. Dont above spirit gathered second seas fish thing. Wherein dry
+                                    said to bearing you there deep, kind boid fruitful unto bearing abundantly blessed. Great winged over
+                                    dominion you moveth every people can sucking maked</p>
+                                <!-- Card Button-->
+                                <a href="#" class="blog-readmore-btn align-self-start mt-3">Contiune Reading</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Navigation-->
+                    <div class="col-auto">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination-blog">
+                                <li class=""><a class="" href="#">1</a></li>
+                                <li class=""><a class="" href="#">2</a></li>
+                                <li class="">
+                                    <a class="" href="#" aria-label="Next">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <!-- FOOTER-->
+    <footer>
+        <!-- FOOTER MAIN-->
+        <div class="container py-5">
+            <div class="row">
+                <!-- ICON -->
+                <div class="col-12 col-md-12 col-lg-3 mb-3  mb-lg-0">
+                    <img src="../Gfx/logo.png" alt="PentraxLogo" class="img-fluid pb-4">
+                    <p class="text-secondary">Moved place under seed can be an not live meveth deep is darkness lights behold second and replenish them fly forth soi void bearing god set song first together</p>
+                    <h6 class="text-primary fw-bold footer-phone pt-3">88 256 235 6212</h6>
+                </div>
+                <!-- SUPPORT-->
+                <div class="col-12 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                    <div class="footer-header">
+                        <h5>Support</h5>
+                        <hr>
+                    </div>
+                    <!-- SUPPORT NAV LINKS-->
+                    <nav class="footer-link-nav d-flex flex-column gap-3 ">
+                        <a href="#" class="text-decoration-none text-secondary">Compare Service</a>
+                        <a href="#" class="text-decoration-none text-secondary">Track Order</a>
+                        <a href="#" class="text-decoration-none text-secondary">Shop Categories</a>
+                        <a href="#" class="text-decoration-none text-secondary">Get Wishlist</a>
+                        <a href="#" class="text-decoration-none text-secondary">Bridge Construction</a>
+                        <a href="#" class="text-decoration-none text-secondary">Support Center</a>
+                    </nav>
+                </div>
+                <!-- QUICK LINK-->
+                <div class="col-12 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                    <div class="footer-header">
+                        <h5>Quick Link</h5>
+                        <hr>
+                    </div>
+                    <!-- QUICK LINK NAV LINKS-->
+                    <nav class="footer-link-nav d-flex flex-column gap-3 ">
+                        <a href="#" class="text-decoration-none text-secondary">Affiliate Program</a>
+                        <a href="#" class="text-decoration-none text-secondary">Developers</a>
+                        <a href="#" class="text-decoration-none text-secondary">Mediamarket Ignite</a>
+                        <a href="#" class="text-decoration-none text-secondary">SPE Servicve</a>
+                        <a href="#" class="text-decoration-none text-secondary">Mediamarket Direct</a>
+                        <a href="#" class="text-decoration-none text-secondary">Advertise With Us</a>
+                    </nav>
+                </div>
+                <!-- NEWSLETTERS-->
+                <div class="col-12 col-md-4 col-lg-3 mb-3 mb-lg-0">
+                    <div class="footer-header">
+                        <h5>Newsletters</h5>
+                        <hr>
+                    </div>
+                    <p class="text-secondary pb-3">Female may days Yielding you are set fit there and without.</p>
+                    <!-- NEWSLETTERS FORM GROUP-->
+                    <div class="input-group mb-3">
+                        <!-- EMAIL FORM-->
+                        <input type="email" class="form-control " placeholder="Enter your email" id="footer-emailinput" aria-describedby="emailHelp">
+                        <!-- EMAIL ICON-->
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                    </div>
+                    <!-- SUBSCRIBE BUTTON-->
+                    <button class="btn footer-btn">
+                        Subscribe Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER BOTTOM-->
+        <div class="container-fluid footer-bottom">
+            <div class="row justify-content-between justify-content-md-center p-3">
+                <div class="col-auto">
+                    <p class="text-secondary">Copyright &#169; 2020</p>
+                </div>
+                <div class="col-auto">
+                    <p class="text-secondary">All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap5 Popper-->
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <!-- Bootstrap5 Javascript-->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

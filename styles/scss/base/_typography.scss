@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('../../font/circular-std-medium-500.ttf?family=Circular');
+
+@font-face{
+    font-family: 'Circular';
+    src: url(../../font/circular-std-medium-500.ttf);
+}
+
+header > *{
+    color: $text-header-color;
+    font-family: 'Circular'; 
+}
+
+
+main{
+    p{
+        font-family: 'Poppins', sans-serif;
+
+    }
+    h1, h2, h3, h4, h5, h6{
+    color: $text-header-color !important;
+    font-family: 'Circular';
+    }
+}
+
+footer{
+    p{
+        font-family: 'Poppins', sans-serif;
+
+    }
+    h1, h2, h3, h4, h5, h6{
+    color: $text-header-color;
+    font-family: 'Circular';
+    }
+}
+
+.text-primary{
+    color: $primary-color !important; 
+}
+
+

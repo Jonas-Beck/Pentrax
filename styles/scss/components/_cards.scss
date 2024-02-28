@@ -1,0 +1,126 @@
+// Teams Card
+.team-card{
+    .card-socials{
+        opacity: 0.5;
+    }
+    .card-body{
+        background-color: $card-bg;
+    }
+    &:hover .card-body{
+        background-color: $primary-color;
+        transition: 0.5s;
+        .card-title{
+            color: white !important;
+            
+        }
+        .card-subtitle{
+            color: rgba($color: #ffffff, $alpha: 0.8) !important; 
+        }
+        .card-socials > a > i{
+            color: white !important;
+        }
+    }
+}
+
+.pricing-card{
+    border: 1px solid rgba($color: black, $alpha: 0.1);
+    border-radius: 5px;
+}
+
+// HomePage Testimonials
+.feedback-card{
+    .card-body:nth-child(1){
+        border: 1px solid rgba($color: black, $alpha: 0.1);
+        border-bottom: none;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        i{
+            top: 0px;
+            opacity: 10%;
+        }
+    }
+    .card-body:nth-child(2){
+        background-color: $card-bg;
+    }
+    &:hover .card-body:nth-child(2){
+        background-color: $primary-color;
+        transition: 0.5s;
+        .card-title{
+            color: white !important;
+            
+        }
+        .card-subtitle{
+            color: rgba($color: #ffffff, $alpha: 0.8) !important; 
+        }
+    }
+}
+
+
+/*Blog Page Cards*/
+.blog-card {
+    .blog-tag {
+        @include blog-type($blog-catagory-bg)
+    }
+    .blog-play{
+        //Placement
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        //Circle size and colors
+        color: $primary-color;
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+        // Center Arrow
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        //Hover effekt
+        @include btn-hover($primary-color, white)
+    }
+    .blog-slide{
+        left: 5%;
+        right: 5%;
+        top: 50%;
+        i{
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            // Center in circle
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            //Hover effekt
+            @include btn-hover($primary-color, white)
+
+        }
+    }
+}
+
+// Blog Aside Contact Card
+.aside-overlay-card{
+    .card-img-overlay {
+        background-color: rgba($color: $text-header-color, $alpha: 0.8);
+        padding: 0px 25px;
+    }
+    a{ 
+        margin-top: 5px;
+        text-decoration: none;
+        align-self: center;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 30px;
+        background-color: $primary-color;
+        // Hover Effekt
+        transition: .5s;
+        &:hover{
+            background-color: darken($color: $primary-color, $amount: 5); // Example Hover effekt
+        }
+    }
+}

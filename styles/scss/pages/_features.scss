@@ -1,0 +1,36 @@
+//FIXME NOT FEATURES SPECIFIC STYLING USED IN MAIN ASWELL
+
+.hover-parent{
+    .hover-element{
+        transition: 0.5s;
+    }
+    &:hover{
+        .hover-element{
+            scale: 1.3;
+        }
+        h4{
+            color: $primary-color;
+        }
+    }
+}
+
+.settings-box-1{
+    width: 60px;
+    height: 60px;
+    background-color: $feature-settings-1-bg;
+}
+.settings-box-2{
+    width: 60px;
+    height: 60px;
+    background-color: $feature-settings-2-bg;
+}
+.security-box-1{
+    width: 60px;
+    height: 60px;
+    background-color: $feature-security-1-bg;
+}
+.security-box-2{
+    width: 60px;
+    height: 60px;
+    background-color: $feature-security-2-bg;
+}
